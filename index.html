@@ -11,8 +11,10 @@
         function init(){
             var map = new ymaps.Map("map", {
                 center: [47.215807, 39.6308133], // Координаты центра карты
-                zoom: 17 // Масштаб карты
+                zoom: 20 // Масштаб карты
             });
+            var bounds = [[47.212873, 39.626403], [47.221142, 39.635647]]; 
+            map.setBounds(bounds);
             let placemath = new ymaps.Placemark([47.216766, 39.628713],{
                 balloonContentHeader: 'Институт математики, механики и компьютерных наук имени И. И. Воровича ЮФУ',
                 balloonContentBody: 'ул. Мильчакова, 8А, микрорайон Западный, Ростов-на-Дону \n ',
